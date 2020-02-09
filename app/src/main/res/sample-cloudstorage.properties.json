@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pdfviewer-252710",
+  "private_key_id": "fb70ca234e9ac892db78bf89476da8c5d44d66eb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVlJXxTzwOWHZe\nbEPLE1J06aOXrxm7UJiOYUhsEj51RNXJq64XlwZl5qGoB0FODQrbC5DC5poE0eeH\nQav2fAqBsRPZaKiHlowCC5KfwrU9GtppfnNMnz/XK65GiKbYVXhrAi+zPlS36ZfF\nskChHvA93doGGnj+Uk3loRz3LrFaaJfUm6jFPj/6YilRKHNYEDEflqqOsUzq2Gys\nbbpQNFElt+kUAgw51/HiAgioJ2DX+noO+GoU1f9T35ynEQQYsFKy45BeelvYMr0t\nR4SwBILMrfHv8L0a2QVTxVXPySnd6wCbGdf6FTvq2nrkjB5z4xsD9OpAJma8mjIi\ns7VivugnAgMBAAECggEAI/SsvYAiUyPvYXwGebSaCBahNNMEmPU7iZS1FYSIwUNC\nXn4pg80oBZWrF1eJVfN6JWAwEa+ytCcGPE4A/jDpr+W4urwUyya8EUgTehPUYSIZ\nLPNdw8N3gujWoQc2V2skJ5epohpXNtL7ewvEN5u2xCOKJcblIaOHe6YA81gIAXkV\nduRFlIzUT4jxPCH5zoTXF2NRcR9uDPD0qFCc2cqlTVJJ9dX91YoPbAHjEZOJjKTA\nVk81z2IRb0yfUS47grHaTKPMmcg1f3QnkOjPBBuJZ0MWjti5TZ0iN9CwCSHmEly0\nLwllNRIdfV2BZxfjjOOJqNPeFutxfALxaJEjztal6QKBgQDyNYFHzZM3JQh8CkDf\nPp7Cm5duMEXjZdOX0wOZt1itfHFeY9LCL/KTW01BGB4jp46s2x/uCKFp9LAMZMoa\n+1mcgrEvMUfGQN5CKjRcMmCq5KdnuiDJ/iu2dxRFbXsKJ7ybLj2BE/bo5yhZA+x9\njkucp4dLxGPySMcemBK89HIemwKBgQDhvcifjOardKJC9WMdAm8NAsT0GqVwbO8T\ng74Mli2XLcBr0z7pngziktWQVBaf0kdxVwg16gG/6vXGAHvAU0EcFb4yLT+YRG7u\nfhDc367+ArKeTj0X+VQYkWZUiSYSD+mzycaXq9MiF1NmPj3KCodykL0vOrtqO4Ya\nEq3c18VPZQKBgEzPGOtbTvcq4FDts3rYUeJnExOXbWJalUpNWZPyp8WEdDM5tsls\nCSIfzxT4f/5QkZdRegOzavS96uJTSCBcWyOd8nCD0T4WriUPW0FtnGg1UL09Mk68\nMsKPardFq8IhrdcMR+baHO/o9kucSe/bIzFPk0E8y3E3ESYrla2kW1hHAoGBANMe\nlz8Am8rGbeqJbIR4/jsA2Aoj0Y3vkziBAYDsAv9cfpVZH4GFmy9be/hbbD1UgBRz\n/O3PSIugxvLDCPm54y7M9vAeeVeCyOyrYkHvwM024K5FJcYCHLBNa5KsIbrKvxqy\nHtVCkVdU0V7R3x/R8RMoYoaFOzoDKUvBJHFiKtoxAoGBAPBzolEh+NT5kqlwH9H5\nKsJoz3y6zQqMAju/DZc60XaggACTw7Z+jaqFPtb2hwV/+K1brWBsP3U2oDnMNr+5\nBssU9vmN3a8Q2cLZypsgzpnD4fQqb6HZ2TCGUMqS4ohGoZ4RIvLfHhdfNM3pSsEM\nrTRTBF3Uc8QkCEKVYq5IAS+R\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-sql@pdfviewer-252710.iam.gserviceaccount.com",
+  "client_id": "107743253434258517856",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-sql%40pdfviewer-252710.iam.gserviceaccount.com"
+}

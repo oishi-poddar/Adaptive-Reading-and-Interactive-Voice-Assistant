@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GradBank</string>
+    <string name="what_s_on_your_mind">Enter your query</string>
+    <string name="pdfReaderURL">https://us-central1-cloud-b2-hsbc19-oishi-proj1.cloudfunctions.net/pdfReader?fileUrl=</string>
+    <string name="googleDocURL">"http://docs.google.com/gview?embedded=true"</string>
+    <string name="title_activity_test">test</string>
+</resources>

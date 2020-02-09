@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+
+repositories {
+    maven {
+        url "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
+    }
+    mavenCentral()
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/INDEX.LIST'
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.example.vmac.chatbot"
+        minSdkVersion 23
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    // solve duplicate classes
+    applicationVariants.all { variant ->
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'annotations'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation 'com.ibm.watson:assistant:7.0.0'
+    implementation 'com.ibm.watson:text-to-speech:7.0.0'
+    implementation 'com.ibm.watson:speech-to-text:7.0.0'
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.0'
+    testImplementation 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+//    implementation 'org.jsoup', name: 'jsoup', version: '1.12.1'
+
+    implementation 'com.ibm.watson:ibm-watson:7.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+//    compile 'com.google.cloud:google-cloud-storage:1.90.0'
+//    implementation 'com.github.tbouron.shakedetector:library:1.0.0@aar'
+    implementation 'com.mapzen.android:speakerbox:1.4.1'
+    implementation 'jp.wasabeef:blurry:2.1.0'
+// https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+
+
+//    implementation 'com.google.api-client:google-api-client:1.30.2'
+// https://mvnrepository.com/artifact/com.google.apis/google-api-services-plus
+// https://mvnrepository.com/artifact/com.google.apis/google-api-services-storage
+//    implementation 'com.google.apis', name: 'google-api-services-storage', version: 'v1-rev158-1.25.0'
+//     https://mvnrepository.com/artifact/com.google.cloud/google-cloud-storage
+//    implementation 'com.google.cloud', name: 'google-cloud-storage', version: '1.92.0'
+
+
+}
